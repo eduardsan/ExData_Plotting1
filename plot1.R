@@ -1,5 +1,3 @@
-library(lubridate)
-
 data <- read.table("./data/household_power_consumption.txt", 
                    header = FALSE, sep = ";", na.strings = "?", 
                    col.names = c("Date", "Time", "Global_active_power",
