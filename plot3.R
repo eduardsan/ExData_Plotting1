@@ -24,7 +24,7 @@ with(data, plot(Time, Sub_metering_1, type = "l",
 with(data, points(Time, Sub_metering_2, type = "l", col = "red"))
 with(data, points(Time, Sub_metering_3, type = "l", col = "blue"))
 
-legend("topright", col = c("black", "blue", "red"), lty = 1,
+legend("topright", col = c("black", "red", "blue"), lty = 1,
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 dev.off()
