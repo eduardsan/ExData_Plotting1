@@ -13,11 +13,7 @@ data <- read.table("./data/household_power_consumption.txt",
 ## convert dates and times
 data$Date <- as.Date(data$Date, format = "%d/%m/%Y")
 data$Time <- strptime(data$Time, format = "%H:%M:%S")
-
-## fix Times's dates
-for(i in seq_along(data$Time)) {
-  date(data$Time[i]) <- data$Date[i]
-}
+date(data$Time) <- data$Date
 
 png("plot3.png")
 
